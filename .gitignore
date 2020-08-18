@@ -14,7 +14,7 @@ markov-old.js
 
 # Node modules
 
-node_modules
+/node_modules
 
 # Package-lock.json
 
