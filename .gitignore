@@ -1,0 +1,21 @@
+# Chat log
+
+log.txt 
+
+# Options
+
+options.js
+
+# Old markovs
+
+markov.js
+
+markov-old.js
+
+# Node modules
+
+node_modules
+
+# Package-lock.json
+
+package-lock.json
