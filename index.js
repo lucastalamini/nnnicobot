@@ -161,7 +161,9 @@ function eightBall() {
     "Most likely catJAM",
     "Nope KEKW",
     "Of course widepeepoHappy",
-    "Sure...sure... OMEGALUL",
+    "Not gonna happen OMEGALUL",
+    "Does this answer your question? -> peepoFinger",
+    "Probably monkaS",
   ];
 
   return eightBallArray[Math.floor(Math.random() * eightBallArray.length)];
@@ -202,3 +204,17 @@ function randomTextArr() {
 
   return randomTextStrFormatted;
 }
+
+// Delete old messages from the log.txt file
+setInterval(() => {
+  let textblock = fs
+    .readFileSync("./log.txt")
+    .toString()
+    .split("\n")
+    .slice(150)
+    .join("\n");
+  fs.writeFile("./log.txt", textblock, function (err, result) {
+    if (err) console.group("error", err);
+  });
+  console.log(textblock.length);
+}, 43200 * 1000);
